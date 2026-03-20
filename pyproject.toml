@@ -1,7 +1,10 @@
 [project]
-name = "llm-from-scratch"
+name = "llm-backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "LLM implementation from scratch using PyTorch"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = ["torch", "tiktoken", "matplotlib"]
+
+[project.optional-dependencies]
+pretrained = ["transformers"]
